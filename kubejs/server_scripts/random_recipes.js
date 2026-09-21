@@ -63,7 +63,7 @@ ServerEvents.recipes(event => {
         .itemOutputs("minecraft:netherrack")
         .duration(20)
         .EUt(GTValues.VA[GTValues.LV])
-    
+
     // End Stone
     event.recipes.gtceu.chemical_reactor("dust_to_end_stone")
         .itemInputs("kubejs:dust")
