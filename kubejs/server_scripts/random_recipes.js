@@ -67,7 +67,7 @@ ServerEvents.recipes(event => {
     // End Stone
     event.recipes.gtceu.chemical_reactor("dust_to_end_stone")
         .itemInputs("kubejs:dust")
-        .inputFluids(Fluid.of("thermal:ender", 250))
+        .inputFluids(Fluid.of("thermal:ender", 500))
         .itemOutputs("minecraft:end_stone")
         .duration(20)
         .EUt(GTValues.VA[GTValues.MV])
