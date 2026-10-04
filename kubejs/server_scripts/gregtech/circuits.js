@@ -57,7 +57,6 @@ ServerEvents.recipes(event => {
         .itemOutputs("gtceu:basic_electronic_circuit")
         .duration(10 * 20)
         .EUt(GTValues.VH[GTValues.LV])
-    //event.replaceInput({ output: "gtceu:good_electronic_circuit" }, "#gtceu:diodes", "gtceu:diode")
 
     // Change NAND Chips to be on the same Circuit Assembler tier as the rest of the Integrated theme
     event.forEachRecipe({ output: "gtceu:nand_chip" }, recipe => {
