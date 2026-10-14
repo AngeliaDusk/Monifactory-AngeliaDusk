@@ -8,7 +8,7 @@ ServerEvents.recipes(event => {
             .circuit(circuit)
             .itemOutputs(output)
             .duration(60) // same for all recipes
-            .EUt(64) // same for all recipes
+            .EUt(GTValues.VHA[GTValues.MV]) // same for all recipes
     }
     if (doHNN) {
         // //// Machine Recipe //////
@@ -32,11 +32,11 @@ ServerEvents.recipes(event => {
             .addMaterialInfo(true)
             .stationResearch(b => b
                 .researchStack("gtceu:loot_superfabricator")
-                .EUt(1966080)
+                .EUt(GTValues.VA[GTValues.UHV])
                 .CWUt(108, 512000)
             )
             .duration(1200)
-            .EUt(1966080)
+            .EUt(GTValues.VA[GTValues.UHV])
 
         // //// Fabricator Recipes //////
 
@@ -80,9 +80,8 @@ ServerEvents.recipes(event => {
         fabricator("thermal/thermal_elemental", 4, "8x thermal:blitz_rod")
         fabricator("thermal/thermal_elemental", 5, "8x thermal:basalz_rod")
         fabricator("thermal/thermal_elemental", 6, "8x thermal:blizz_rod")
-        fabricator("warden", 1, "minecraft:sculk_catalyst")
-        fabricator("warden", 2, "kubejs:deep_dark_data")
-        fabricator("warden", 3, "kubejs:warden_horn")
+        fabricator("warden", 1, "kubejs:deep_dark_data")
+        fabricator("warden", 2, "kubejs:warden_horn")
         fabricator("witch", 1, "16x minecraft:redstone")
         fabricator("witch", 2, "16x minecraft:glowstone_dust")
         fabricator("witch", 3, "16x minecraft:sugar")

@@ -8,11 +8,6 @@
 
 GTCEuStartupEvents.registry("gtceu:element", event => {
 
-    // Primal Mana
-
-    event.create("mana")
-        .symbol("ᛗ")
-
     // Sculk
 
     event.create("cryolobus")
@@ -23,10 +18,6 @@ GTCEuStartupEvents.registry("gtceu:element", event => {
         .protons(-1)
         .neutrons(441)
         .symbol("ᛋ*")
-    event.create("sculk_superconductor")
-        .protons(-2)
-        .neutrons(442)
-        .symbol("ᛊ")
 
     // Prismatic Crucible
 
@@ -112,7 +103,6 @@ GTCEuStartupEvents.registry("gtceu:material_icon_set", event => {
     event.create("monium").parent(GTMaterialIconSet.SHINY)
 
     // Miscellaneous
-    event.create("mana").parent(GTMaterialIconSet.SHINY)
     event.create("necrosiderite").parent(GTMaterialIconSet.METALLIC)
     event.create("omnium").parent(GTMaterialIconSet.SHINY)
     event.create("hyperdegenerate_darconite").parent(GTMaterialIconSet.SHINY)
